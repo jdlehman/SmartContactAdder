@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="7px"
+    >
+	    <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView  
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="First Name:"
+		    	/>
+		    <AutoCompleteTextView  
+		    	android:id="@+id/firstName"
+		    	android:hint="First Name"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content"
+		    	android:completionThreshold="2" 
+		    	/>
+		</LinearLayout>
+		
+		<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView  
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="Last Name:"
+		    	/>
+		    <EditText  
+		    	android:id="@+id/lastName"
+		    	android:hint="Last Name"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content" 
+		    	/>
+		</LinearLayout>	 
+		
+		<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView  
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="Business Name:"
+		    	/>
+		    <EditText  
+		    	android:id="@+id/busName"
+		    	android:hint="Business Name"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content" 
+		    	/>
+		</LinearLayout>	 
+		
+		<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView  
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="Phone Number:"
+		    	/>
+		    <EditText  
+		    	android:id="@+id/phoneNum"
+		    	android:hint="Phone Number"
+		    	android:phoneNumber="true"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content" 
+		    	/>
+		</LinearLayout>	 	    	
+		    	
+		<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView  
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="Street:"
+		    	/>
+		    <EditText  
+		    	android:id="@+id/street"
+		    	android:hint="Street"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content" 
+		    	/>
+		</LinearLayout>	 
+		   
+		<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView  
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="City:"
+		    	/>
+		    <EditText  
+		    	android:id="@+id/city"
+		    	android:hint="City"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content" 
+		    	/>
+		</LinearLayout>	 
+		
+		<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView  
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="State:"
+		    	/>
+		    <EditText  
+		    	android:id="@+id/state"
+		    	android:hint="State"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content" 
+		    	/>
+		</LinearLayout>	 
+		
+		<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView  
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="Zipcode:"
+		    	/>
+		    <EditText  
+		    	android:id="@+id/zipcode"
+		    	android:hint="Zipcode"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content" 
+		    	/>
+		</LinearLayout>	
+
+		<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<TextView  
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="Country:"
+		    	/>
+		    <EditText  
+		    	android:id="@+id/country"
+		    	android:hint="Country"
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="wrap_content" 
+		    	/>
+		</LinearLayout>	
+		<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+			<Button  
+				android:onClick="btnDone"
+				android:id="@+id/done"
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="Done"
+		    	/>
+		    <Button  
+		    	android:onClick="btnCancel"
+		    	android:id="@+id/cancel"
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:text="Cancel"
+		    	/>
+		</LinearLayout>	
+	</LinearLayout>
+</ScrollView>
+
+
